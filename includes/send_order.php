@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_SESSION['cart'])) {
 
     $message = "🔔 НОВЫЙ ЗАКАЗ!\n\n👤 Клиент: $name\n📞 Телефон: $phone\n\n📦 Состав:\n$items_text\n💰 Итого: " . number_format($total, 0, '.', ' ') . " ₽";
 
-    $botToken = "8667448276:AAFwdLQR8oui1okGQ5wcbs1WoDA2yPtmHww";
-    $chatId = "1021931935";
+    $botToken = "";
+    $chatId = "";
     
     // Формируем ссылку для JS
     $tg_url = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message);
