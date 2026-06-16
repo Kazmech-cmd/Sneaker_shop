@@ -8,10 +8,10 @@ if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1'
     $pass = '';
 } else {
     // хостинг
-    $host = 'sql208.infinityfree.com';
-    $db   = 'if0_41017050_sneaker_shop';
-    $user = 'if0_41017050';
-    $pass = 'jK1uZRmpIS'; 
+    $host = '';
+    $db   = '';
+    $user = '';
+    $pass = ''; 
 }
 
 $charset = 'utf8mb4';
